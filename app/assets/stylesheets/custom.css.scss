@@ -1,0 +1,83 @@
+$navbar-default-bg: rgba(68, 34, 1, 0.959);
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body,html {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    font-weight: bold; 
+    height:100%; 
+}
+#logo {
+    font-weight: bold;
+    font-size: 24pt;
+    color: white;
+
+}
+a:hover#logo {
+    color:rgb(122, 101, 6);
+}
+.navbar .nav>li>a {
+    color: white;
+}
+.navbar .nav>li>a:hover {
+    color: rgb(122, 101, 6);
+}
+#create {
+    font-weight: bold;
+    font-size: 15pt;
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(122, 101, 6);
+}
+a:hover#create {
+    color: rgba(68, 34, 1, 0.959);
+}
+td, th {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+}
+#thead {
+    font-size: 14pt;
+    color: rgba(68, 34, 1, 0.959);
+    font-weight: bolder;
+}
+#fields {
+    border:2px solid rgba(68, 34, 1, 0.959);
+    width: 30%;
+    border-radius: 3px;
+}
+#submit, #signup {
+    border: 1px solid rgba(68, 34, 1, 0.959);
+    background-color: rgba(68, 34, 1, 0.959);
+    color: white;
+    padding: 13px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+#submit:hover {
+    border: 1px solid rgba(68, 34, 1, 0.959);
+    background-color: rgba(68, 34, 1, 0.959);
+    color:rgb(122, 101, 6);
+    padding: 13px;
+    border-radius: 3px;
+}
+#signup:hover{
+    color:rgb(122, 101, 6);
+}
+h1 {
+    color: rgba(68, 34, 1, 0.959);
+    font-weight: bold;
+    padding-top: 25px;
+}
+footer {
+    color: rgba(68, 34, 1, 0.959);
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 11.2px;
+}
+
