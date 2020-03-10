@@ -4,6 +4,8 @@
     <title>Alphablog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
+  
     <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -46,6 +48,7 @@ a:hover#back {
 </style>
 </head>
 <body>
+<div id= "background">
 
 <%= render 'layouts/navigation' %>
 
