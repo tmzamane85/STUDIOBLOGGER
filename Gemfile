@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'sqlite3'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -49,7 +51,6 @@ group :development do
 end
 
 group :test do
-  gem 'sqlite3'
 
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
