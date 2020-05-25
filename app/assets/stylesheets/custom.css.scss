@@ -3,22 +3,12 @@
 
 body,html {
     font-family: 'Jura', sans-serif;
-    text-align: center;
-    font-weight: bold; 
-    height:100%; 
-
-}
-#background {
-    background-image: url("background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
+    margin: 0;
 }
 #logo {
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 26pt;
     color: white;
-
 }
 #navbar {
     background-color: rgba(68, 34, 1, 0.959);
@@ -32,36 +22,23 @@ a.nav-link {
 .nav-link:hover {
     color: rgb(122, 101, 6);
 }
-#create {
-    font-weight: bold;
-    font-size: 15pt;
-    text-decoration: none;
-    margin: 10px;
-    color: rgb(122, 101, 6);
-}
+
 a:hover#create {
     color: rgba(68, 34, 1, 0.959);
 }
-td, th {
-    height: 40px;
-    width: 130px;
-    text-align: center;
-}
-#thead {
-    font-size: 14pt;
-    color: rgba(68, 34, 1, 0.959);
-    font-weight: bolder;
-}
-#fields {
-    border:2px solid rgba(68, 34, 1, 0.959);
-    width: 30%;
-    border-radius: 3px;
-}
+ 
+#homepage {
+    padding:200px 0 0 300px;
+    
+  }
+
+
 #submit, #signup {
     border: 1px solid rgba(68, 34, 1, 0.959);
     background-color: rgba(68, 34, 1, 0.959);
     color: white;
-    padding: 13px;
+    padding: 15px;
+    margin: 12px;
     text-decoration: none;
     border-radius: 3px;
 }
@@ -72,21 +49,28 @@ td, th {
     padding: 13px;
     border-radius: 3px;
 }
+#signup {
+    padding: 20px;
+    margin-left: 20px;
+}
 #signup:hover{
+
     color:rgb(122, 101, 6);
 }
-h1 {
-    color: rgba(68, 34, 1, 0.959);
-    font-weight: bold;
-    padding-top: 25px;
+
+.well {
+    border: 2px solid  rgba(68, 34, 1, 0.959);
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius:5px;
+    padding: 20px 0 20px 10px;
 }
-footer {
-    color: rgba(68, 34, 1, 0.959);
+#sticky-footer {
+    background-color: rgba(68, 34, 1, 0.959);
     position: fixed;
-    width: 100%;
-    position: fixed;
-    left: 0;
     bottom: 0;
-    font-size: 11.2px;
+    left: 0;
+    width:100%;
+    text-align: center;
+
 }
 

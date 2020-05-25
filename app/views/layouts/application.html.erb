@@ -3,64 +3,23 @@
   <head>
     <title>Alphablog</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    
+    <%= csp_meta_tag %> 
   
     <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
- <style type="text/css">
- #flash {
-  color:green;
-  list-style: none;
-  font-weight: bolder;
-  font-size: 14pt;
- } 
- #msg { 
-   color: red;
-   font-weight: bold;
-   list-style: none;
- }
-#action {
-  margin: 12px;
-  padding: 12px;
-  color: rgb(122, 101, 6);
 
-}
- a:hover#action {
-  text-decoration: none;
-  background-color: rgba(68, 34, 1, 0.959);
-  border-radius : 3px;
-  color: white;
-}
-#back {
-  font-size:12pt;
-  text-decoration: none;
-  color: rgb(122, 101, 6);
-}
-a:hover#back {
-  color: rgba(68, 34, 1, 0.959);
-
-}
-#homepage {
-  padding-top:150px;
-}
-</style>
 </head>
 <body>
-<div id= "background">
-
 <%= render 'layouts/navigation' %>
+<%= render 'layouts/messages' %>
 
-<% flash.each do |name,msg| %>
-    <ul id="flash">
-      <li><%= msg %></li>
-    </ul>
-<% end %> 
+<div class="container">
 <%= yield %>
-<footer>
-  <span style="color:black">Copyright &copy; </span>The Complete Ruby on Rails Developer<span style="color:black"> by</span> Mashrur Hossain</div>
-</footer>
 </div>
-  </body>
+<div id="sticky-footer" class="py-3 text-white">
+  Copyright &copy; The Complete Ruby on Rails Developer<span style="color:black"> by Mashrur Hossain</div>
+</div>
+</body>
+
 </html>

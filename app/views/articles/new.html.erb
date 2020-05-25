@@ -1,27 +1,3 @@
-<h1>Create an article</h1>
-<% if @article.errors.any? %>
-<h2>The following errors prevented the article from getting created</h2>
-<ul id= "msg">
-<% @article.errors.full_messages.each do |msg| %>
-  <li>
-  <%= msg %>
-  </li>
-  <% end %>
-  </ul>
-<% end %>
-  
+<h1 class="text-center mt-4">Create an article</h1>
 
-<%= form_for @article do |d| %>
-  <%= d.label :title %><br />
-  <%= d.text_field :title, id: "fields" %>
-
-<p>
-  <%= d.label :description %><br />
-  <%= d.text_area :description, id: "fields" %>
-<p>
- <%= d.submit id: "submit" %>
- <p >
-
- <%= link_to "Back to article listing", articles_path, id: "back" %>
-
-<% end %>    
+<%= render "form" %>
